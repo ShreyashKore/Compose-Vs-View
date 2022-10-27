@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.shreyashkore.composevsview">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeVsView"
         tools:targetApi="31">
+        <profileable
+            android:shell="true"
+            tools:targetApi="q" />
+        <profileable
+            android:shell="true"
+            tools:targetApi="q" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
